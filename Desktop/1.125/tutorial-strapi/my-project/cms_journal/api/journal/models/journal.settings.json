@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "journals",
+  "info": {
+    "name": "journal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "voice_recordings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "voice.voice",
+      "required": false
+    },
+    "Image_picture": {
+      "type": "component",
+      "repeatable": true,
+      "component": "image.image"
+    }
+  }
+}

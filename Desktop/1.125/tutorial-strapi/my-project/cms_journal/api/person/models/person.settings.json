@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "Person"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "journals": {
+      "collection": "journal"
+    }
+  }
+}

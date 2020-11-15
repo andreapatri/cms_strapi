@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_image_images",
+  "info": {
+    "name": "Image",
+    "icon": "photo-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "labels": {
+      "type": "string",
+      "required": true
+    },
+    "key_word": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

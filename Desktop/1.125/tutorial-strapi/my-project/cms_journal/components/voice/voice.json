@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_voice_voices",
+  "info": {
+    "name": "Voice",
+    "icon": "voicemail"
+  },
+  "options": {},
+  "attributes": {
+    "text_from_audio": {
+      "type": "richtext",
+      "required": true
+    },
+    "Recording": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
